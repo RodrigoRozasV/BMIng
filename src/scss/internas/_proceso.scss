@@ -6,7 +6,6 @@
     @include m.tablet { 
         display: flex;
         gap: v.$separacion;
-        align-items: center;
     }
     &:last-of-type {
         margin-bottom: 0;
@@ -19,10 +18,11 @@
     .imagen,
     .texto {
         flex: 1;
+        margin-top: 1rem;
     }
     .texto {
-        margin-top: 1rem;
         h3 {
+            font-size: 2rem;
             margin: 0;
             text-align: left;
             color: v.$primario;
@@ -36,4 +36,18 @@
             }
         }
     }
+}
+
+.lista-servicio{
+    list-style:circle;
+    margin: 1rem;
+    padding: 1rem;
+    li{
+        margin: 0 0 1rem 0;
+    }
+    
+}
+
+.texto-servicio{
+    line-height: normal;
 }
